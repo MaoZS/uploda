@@ -16,6 +16,7 @@
       <tr>
         <td><%= image.name %></td>
         <td><%= image.comment %></td>
+        <td><%= image_tag(image.image.url, :width => "300") %></td>
         <td><%= link_to 'Show', image %></td>
         <td><%= link_to 'Edit', edit_image_path(image) %></td>
         <td><%= link_to 'Destroy', image, method: :delete, data: { confirm: 'Are you sure?' } %></td>
